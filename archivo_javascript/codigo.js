@@ -29,4 +29,38 @@ document.addEventListener('DOMContentLoaded', function() {
         // Cambiar el texto del h1 cuando el ratón pasa por encima
         miH1.innerText = 'Nuevo texto cuando pasas el ratón';
     }
+
+
+
+    //Calculadora
+    const calculadora = document.getElementById('calculadora');
+    const resultado = document.getElementById('resultado');
+    //Funciones
+    function sumar(numero1, numero2) {
+        return numero1 + numero2
+    }
+    function restar(numero1, numero2){
+        return numero1 - numero2
+    }
+    function producto(numero1, numero2){
+        return numero1 * numero2
+    }
+    function division(numero1, numero2){
+        if(numero2 != 0){
+            return numero1 / numero2
+        }
+    }
+    //Funcionamiento
+    //Se usa el objeto Event que lo proporciona el navegador para determinar que 
+    //elemento fue clicado
+    calculadora.addEventListener('click', agregarNumero)
+    //Funcion agregar numero
+    function agregarNumero(caracter){
+        //Tiene que ser de tipo button
+        if(caracter.target.getAttribute('type') === 'button'){
+            //Chivato para ver si está bien
+            console.log("Ha pulsado sobre un boton")
+        }
+    }
+
 });
