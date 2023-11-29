@@ -35,21 +35,6 @@ document.addEventListener('DOMContentLoaded', function() {
     //Calculadora
     const calculadora = document.getElementById('calculadora');
     const resultado = document.getElementById('resultado');
-    //Funciones
-    function sumar(numero1, numero2) {
-        return numero1 + numero2
-    }
-    function restar(numero1, numero2){
-        return numero1 - numero2
-    }
-    function producto(numero1, numero2){
-        return numero1 * numero2
-    }
-    function division(numero1, numero2){
-        if(numero2 != 0){
-            return numero1 / numero2
-        }
-    }
     //Funcionamiento
     //Se usa el objeto Event que lo proporciona el navegador para determinar que 
     //elemento fue clicado
@@ -62,10 +47,24 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log("Ha pulsado sobre un boton")
             if(caracter.target.id === 'igual'){
 
-            }else{
-                
+            }
+            if(caracter.target.id === 'limpiar'){
+
+            }
+            if(caracter.target.id === 'producto'){
+
+            }
+            if(caracter.target.id === 'igual'){
+
+            }
+            if(caracter.target.id === 'igual'){
+
             }
         }
+    }
+
+    function separarResultado(texto){
+        return par
     }
 
 });
