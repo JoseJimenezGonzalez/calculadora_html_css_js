@@ -60,6 +60,11 @@ document.addEventListener('DOMContentLoaded', function() {
         if(caracter.target.getAttribute('type') === 'button'){
             //Chivato para ver si está bien
             console.log("Ha pulsado sobre un boton")
+            if(caracter.target.id === 'igual'){
+
+            }else{
+                
+            }
         }
     }
 
