@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-image: linear-gradient(to left, rgb(154, 214, 56), rgb(231, 185, 177));
+    height: 10vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Alinea el elemento al centro horizontalmente */
+    align-items: center; /* Alinea el elemento al centro verticalmente */
+}
+main{
+  background-image: linear-gradient(to left, magenta, tomato);
+  margin: 0;
+  padding: 0;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#calculadora table{
+	border-collapse: collapse;
+}
+
+#calculadora table{
+	height: 300px;
+}
+
+#calculadora button,
+#calculadora input{
+	width: 100%;
+	height: 100%;
+	font-size: 1em;
+	padding: 10px
+}
+
+#calculadora input{
+	padding: 15px;
+	color: white;
+	border: none;
+	background-color: rgba(0, 0, 0, .5);
+}
+
+#calculadora input:focus{
+	outline: none;
+}
+
+#calculadora button{
+	background-color: rgba(0, 0, 0, .4);
+	border: none;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#calculadora button:hover{
+	background-color: rgba(0, 0, 0, .5);
+}
+
+#calculadora button:focus{
+	outline: none;
+}
+
+#calculadora button.operacion{
+	background-color: crimson;
+}
+
+#calculadora button.operacion#restar,
+#calculadora button.operacion#igual,
+#calculadora button.operacion#clear{
+	background-color: steelblue;
+}
